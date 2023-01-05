@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
+
+html {
+    font-size: calc(12px + 6 * (100vw - 400px) / 1000);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+main {
+    width: 100vw;
+    height: calc(400px + 200 * (100vw - 400px) / 1000);
+    text-align: center;
+    color: #fff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url('images/donation13.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+main .main-title {
+    width: 70%;
+    font-size: 3rem;
+}
+
+main .description {
+    width: 50%;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #ff5959;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+section {
+    margin: 5rem auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    width: 70vw;
+}
+
+section p {
+    color: #707070;
+}
+
+.section-description {
+    width: 80%;
+}
+
+.amount {
+    display: flex;
+    gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.amount h2 {
+    padding: 2rem 1rem;
+    color: #707070;
+    background-color: #fafafa;
+}
+
+.amount #select {
+    background-color: #ffeeee;
+    border: 2px solid #ff5959;
+    border-radius: 5px;
+    color: #ff5959;
+}
+
+#other-amount {
+    color: #939393;
+    border-bottom: 1px solid #939393;
+    z-index: 1;
+    padding-bottom: 1rem;
+    width: 60%;
+}
+
+.plan-container {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.plan {
+    text-align: left;
+    padding: 2rem 1rem;
+    border-radius: 5px;
+}
+
+.plan img {
+    width: 18%;
+    margin-bottom: 1rem;
+}
+
+.plan-title {
+    margin-bottom: 1rem;
+}
+
+#food {
+    background-color: #edf5f6;
+}
+
+#shelter {
+    background-color: #efeeee;
+}
+
+#education {
+    background-color: #fff4d6;
+}
+
+.container {
+    display: flex;
+    width: 70vw;
+    gap: 3rem;
+    justify-content: center;
+    margin: 5rem auto 0;
+    text-align: left;
+}
+
+.container img {
+    width: 40%;
+    border-radius: 5px;
+}
+
+.contribution {
+    margin: 0;
+    width: 70%;
+    text-align: left;
+}
+
+.contribution p {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    color: #707070;
+
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 4rem 5rem;
+    background-color: #fff4d6;
+    width: 90%;
+    border-radius: 5px;
+}
+
+form input {
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+}
+
+form input[type=email] {
+    background-color: #d9d9d9;
+    border-radius: 5px 0 0 5px;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form input[type=submit] {
+    color: white;
+    background-color: #ff5959;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 5rem;
+    width: 100vw;
+    text-align: center;
+    background-color: #0b0d17;
+}
+
+.footer-content {
+    padding: 2rem 0;
+}
+
+footer h2 {
+    color: #ff5959;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer p {
+    color: #fff;
+}
+
+@media only screen and (max-width: 540px) {
+    .amount h2 {
+        font-size: 1.2rem;
+    }
+
+    .plan-container {
+        flex-direction: column;
+    }
+
+}
