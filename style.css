@@ -257,6 +257,10 @@ footer p {
         flex-wrap: wrap;
     }
 
+    form input {
+        border-radius: 5px !important;
+    }
+
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
