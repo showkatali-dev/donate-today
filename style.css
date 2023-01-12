@@ -80,9 +80,10 @@ section p {
     padding: 2rem 1rem;
     color: #707070;
     background-color: #fafafa;
+    border: 2px solid white;
 }
 
-.amount #select {
+.amount h2:hover {
     background-color: #ffeeee;
     border: 2px solid #ff5959;
     border-radius: 5px;
@@ -90,11 +91,18 @@ section p {
 }
 
 #other-amount {
+    font-size: 1.2rem;
+    text-align: center;
     color: #939393;
+    border: none;
     border-bottom: 1px solid #939393;
     z-index: 1;
-    padding-bottom: 1rem;
+    padding: 0.5rem;
     width: 60%;
+}
+
+#other-amount:focus {
+    outline: none;
 }
 
 .plan-container {
@@ -143,6 +151,8 @@ section p {
 .container img {
     width: 40%;
     border-radius: 5px;
+    object-fit: cover;
+    object-position: top left;
 }
 
 .contribution {
@@ -220,13 +230,50 @@ footer p {
     color: #fff;
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 576px) {
     .amount h2 {
         font-size: 1.2rem;
     }
 
-    .plan-container {
+    .plan-container,
+    form,
+    .container {
         flex-direction: column;
     }
 
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    .contribution {
+        width: 100%;
+    }
+
+    .amount {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    .container img {
+        width: 80%;
+        margin: auto;
+    }
+
+    .contribution {
+        width: 100%;
+    }
 }
